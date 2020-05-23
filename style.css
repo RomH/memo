@@ -1,0 +1,112 @@
+body
+{
+	background: url("images/background-site.png") fixed no-repeat;
+	border: 2px grey outset;
+	border-radius: 20px;
+	box-shadow: 2px 5px 4px black;
+}
+
+h1
+{
+	color : blue; /* Ceci est un commentaire en CSS */
+	font-weight: bold;
+	font-size : 1.2em;
+	font-family: "Arial Black", Impact, Arial, "Courier New", Georgia, "Times New Roman", "Trebuchet MS", Verdana;
+	text-align: justify;
+}
+
+h2{
+	width: 20% ; /* largeur d'un bloc */
+	height: ; /* hauteur d'un bloc */
+
+	background-color: #CCC;
+
+}
+
+p{
+	max-width: 600px; /* largeur maximale */
+	min-width: 400px; /* largeur minimale */
+	max-height: 100%; /* hauteur maximale */
+	min-height: 50%; /* hauteur minimale */
+	margin: 2px 0 3px 1px; /*marge extérieure les valeurs suivent le sens des aiguilles d'une montre*/ /* Peut prendre la valeur 'auto' pour centrer un bloc.
+	Attention : la largeur doit être indiquée. */
+
+	padding: 12px; /*marge intérieure*/
+	overflow : auto; /*permet de laisser le texte qui dépasse du bloc avec la valeur 'visible', de le couper avec 'hidden', de scroller le texte coupé avec 'scroll' ou laisser le navigateur choisir
+	avec 'auto'*/
+
+	word-wrap: break-word; /*Permet de couper un mot ou une longue phrase qui dépasse d'un bloc obligatoirement.*/
+}
+
+a:hover
+{
+	color : yellow;
+
+}
+
+.introduction
+{
+	color: green;
+	background-color: #FF0000;
+	opacity: 0.5;
+	text-shadow: 2px 2px 2px black;
+}
+
+.mot
+{
+	color: gold;
+}
+
+h3 + p /* s'affecte au paragraphe après un h3 */
+{
+	color : silver;
+}
+
+p em /* s'affecte au em des paragraphes */
+{
+	color : red;
+}
+
+.flottant
+{
+	float : right;
+}
+
+.autreparagraphe
+{
+	clear:both;
+}
+
+#conteneur{
+	display : flex; /* n'affiche pas les blocs les uns en dessous des autres */
+	flex-direction: row-reverse; /* affiche les éléments dans une direction précise. */
+	flex-wrap: wrap; /* les blocs vont à la ligne quand il n'y a plus de place*/
+	justify-content: space-between; /*aligne les éléments*/
+	align-items: flex-end;
+	border : 2px solid #444;
+	height : 200px;
+}
+
+.element{
+	width: 150px;
+	height: 100px;
+}
+
+.element:nth-child(1){
+	background-color: orange
+
+}
+
+.element:nth-child(2){
+	background-color: blue
+	
+}
+
+.element:nth-child(3){
+	background-color: #AD6
+	
+}
+
+.empty{
+	
+}
